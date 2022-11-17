@@ -1,0 +1,61 @@
+// ============ toolbar starts ==================
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: 600;
+    z-index: 9999;
+  }
+  
+  .toolbar img {
+    margin-left: 16px;
+  }
+  
+  .logo , .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toolbar h5 {
+    color: #f7b21f;
+    margin-bottom: -2px;
+  }
+  
+  .user a img {
+    margin-right: 16px;
+  }
+  // ============ toolbar Ends =====================
+  
+  
+  // =============== Cloud SVG Starts===============
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  svg#clouds {
+    position: fixed;
+    bottom: -145px;
+    z-index: -10;
+    width: 1920px;
+  }
+  // =============== Cloud SVG Ends==================
+  
+  
+  @media(max-width:767px) {
+    .user h5 {
+      display: none;
+    }
+  }
+  

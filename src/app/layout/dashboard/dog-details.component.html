@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Breed: {{ data.name }}</h1>
+<div mat-dialog-content>
+  <div>
+    <img src="{{ data.image }}" alt="dog_image" class="image" />
+  </div>
+  <div>
+    <ul>
+      <li><b>Place of Origin:</b> {{ data.origin ? data.origin : "NA" }}</li>
+      <li><b>Life Span:</b> {{ data.lifeSpan }}</li>
+      <li><b>Height:</b> {{ data.height }} cm</li>
+      <li><b>Weight:</b> {{ data.weight }} Kg</li>
+      <li><b>Temperament:</b> {{ data.temperament }}</li>
+    </ul>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-stroked-button (click)="onNoClick()">Close</button>
+</div>
